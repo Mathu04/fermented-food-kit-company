@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>CaterServ - Home2</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/fav.jpg">
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg py-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                             <a href="index.html" class="nav-item nav-link ">Home</a>
+                             <a href="index2.html" class="nav-item nav-link active ">Home 2</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                             <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Shop</a>
+                                <div class="dropdown-menu bg-light">
+                                    <a href="event.html" class="dropdown-item">Products</a>
+                                    <a href="book.html" class="dropdown-item">Product Details</a>
+                                    
+                                </div>
+                            </div>
+                            <a href="blog.html" class="nav-item nav-link">Blog</a>
+                           
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                             <button id="themeToggle" class="btn btn-sm ms-2">🌙</button>
+
+      <button
+        id="rtlToggle"
+        class="btn btn-primary ms-2  text-dark"
+        title="RTL"
+      >
+        ⇆
+      </button>
+         <a href="login.html" class="btn btn-primary py-3 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                        </div>
+                    
+                     
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/img4.jpeg");
+background-size:cover;
+background-position:center;
+color:white;
+padding:120px 0;
+}
+
+.hero h1{
+font-size:48px;
+font-weight:700;
+}
+
+.hero p{
+font-size:18px;
+margin-top:15px;
+}
+
+.btn-main{
+background:#d4a762;
+color:#000;
+padding:12px 30px;
+border-radius:30px;
+font-weight:500;
+}
+
+.btn-main:hover{
+background:#d4a762;
+color: #111;
+}
+
+/* FEATURES */
+
+.feature-box{
+padding:30px;
+text-align:center;
+border-radius:10px;
+background:white;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:.3s;
+}
+
+.feature-box:hover{
+transform:translateY(-10px);
+}
+
+.feature-box i{
+font-size:35px;
+color:#d4a762;
+margin-bottom:15px;
+}
+
+/* CATEGORY */
+
+.category-card{
+position:relative;
+overflow:hidden;
+border-radius:10px;
+}
+
+.category-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+transition:.4s;
+}
+
+.category-card:hover img{
+transform:scale(1.1);
+}
+
+.category-overlay{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background:rgba(0,0,0,0.6);
+color:white;
+padding:15px;
+text-align:center;
+}
+.category-overlay 
+/* HOW IT WORKS */
+
+.step-box{
+text-align:center;
+padding:30px;
+}
+
+.step-box i{
+font-size:40px;
+color:#d4a762;
+margin-bottom:15px;
+}
+
+/* BLOG */
+
+.blog-card{
+border:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:.3s;
+}
+
+.blog-card:hover{
+transform:translateY(-8px);
+}
+
+/* TROUBLESHOOT */
+
+.help-section{
+background:#f8f9fa;
+padding:70px 0;
+}
+
+.help-box{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* TESTIMONIAL */
+
+.testimonial{
+background:#d4a762;
+color:white;
+padding:80px 0;
+text-align:center;
+}
+
+.testimonial img{
+width:80px;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+background:#111;
+color:white;
+padding:60px 0;
+}
+
+.newsletter input{
+border-radius:30px;
+padding:12px 20px;
+}
+
+</style>
+
+
+<!-- HERO -->
+<section class="hero text-center">
+<div class="container">
+
+<h1 style="color: white;">Make Healthy Fermented Foods at Home</h1>
+
+<p>
+Discover easy-to-use fermentation kits, step-by-step recipes, and expert troubleshooting
+to help you create delicious probiotic foods.
+</p>
+
+<div class="mt-4">
+<a href="#" class="btn btn-main me-3">Shop Fermentation Kits</a>
+<a href="#" class="btn btn-light">Explore Recipes</a>
+</div>
+
+</div>
+</section>
+
+<section class="about-home2 py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="img/img10.jpg" class="img-fluid rounded" alt="About Us">
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-6">
+        <h6 class="text-primary fw-bold">ABOUT OUR COMPANY</h6>
+        <h2 class="display-6 mb-3">We Build Modern & Quality Spaces</h2>
+
+        <p class="text-dark">
+          Our company is dedicated to delivering high-quality construction 
+          and design services for residential and commercial projects. 
+          With years of experience and a skilled professional team, we 
+          create innovative, functional, and beautiful spaces that meet 
+          our clients’ expectations.
+        </p>
+
+        <p class="text-dark">
+          From planning and design to final construction, we focus on 
+          quality, safety, and customer satisfaction. Our goal is to 
+          transform ideas into inspiring structures that stand the test 
+          of time.
+        </p>
+
+        <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- FEATURES -->
+<!-- FEATURES SECTION -->
+<section class="py-5 bg-light">
+<div class="container">
+
+<div class="text-center mb-5">
+<h2 class="display-6">Why Choose Our Fermentation Kits?</h2>
+<p class="text-dark">
+Start your fermentation journey with expert tools, recipes, and guidance.
+</p>
+</div>
+
+<div class="row g-4">
+
+<!-- CARD 1 -->
+<div class="col-lg-4 col-md-6">
+<div class="feature-card h-100">
+
+<img src="img/probiotic.jpg" class="img-fluid">
+
+<div class="feature-content">
+
+<h5>Natural Probiotics</h5>
+
+<p>
+Our fermentation kits help you create probiotic-rich foods that
+support digestion, boost immunity, and improve overall gut health.
+</p>
+
+</div>
+
+</div>
+</div>
+
+<!-- CARD 2 -->
+<div class="col-lg-4 col-md-6">
+<div class="feature-card h-100">
+
+<img src="img/fermented kit.jpg" class="img-fluid">
+
+<div class="feature-content">
+
+<h5>Beginner Friendly Kits</h5>
+
+<p>
+Each kit includes all essential tools, ingredients, and step-by-step
+instructions to help beginners ferment successfully at home.
+</p>
+
+</div>
+
+</div>
+</div>
+
+<!-- CARD 3 -->
+<div class="col-lg-4 col-md-6">
+<div class="feature-card h-100">
+
+<img src="img/vido.jpg" class="img-fluid">
+
+<div class="feature-content">
+
+<h5>Guided Recipes & Tutorials</h5>
+
+<p>
+Learn fermentation techniques with our recipe blog, expert guides,
+and troubleshooting resources for perfect results every time.
+</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- PRODUCT CATEGORIES -->
+<section class="py-5 bg-light">
+<div class="container">
+
+<div class="text-center mb-5">
+<h2>Explore Our Fermentation Kits</h2>
+<p>Everything you need to start fermenting at home.</p>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="category-card">
+<img src="img/index2.jpg">
+<div class="category-overlay">
+<h5 style="color: white;">Kombucha Kits</h5>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="category-card">
+<img src="img/index3.webp">
+<div class="category-overlay">
+<h5 style="color: white;">Kimchi Kits</h5>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="category-card">
+<img src="img/index4.webp">
+<div class="category-overlay">
+<h5 style="color: white;">Sauerkraut Kits</h5>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section class="py-5">
+<div class="container">
+
+<div class="text-center mb-5">
+<h2>How It Works</h2>
+<p>Start fermenting in just 3 simple steps.</p>
+</div>
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="step-box">
+<i class="fa-solid fa-cart-shopping"></i>
+<h5>1. Choose a Kit</h5>
+<p>Select a fermentation kit with all the tools and ingredients you need.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="step-box">
+<i class="fa-solid fa-book-open"></i>
+<h5>2. Follow Recipes</h5>
+<p>Use our easy guides and videos to start your fermentation journey.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="step-box">
+<i class="fa-solid fa-heart"></i>
+<h5>3. Enjoy Healthy Food</h5>
+<p>Enjoy delicious homemade fermented foods packed with probiotics.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- BLOG SECTION -->
+<section class="py-5 bg-light">
+<div class="container">
+
+<div class="text-center mb-5">
+<h2>Latest Fermentation Recipes</h2>
+<p>Learn how to ferment delicious foods with expert guides.</p>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card blog-card">
+<img src="img/home1.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Beginner's Guide to Kombucha</h5>
+<p>Learn how to brew kombucha at home step.</p>
+<a href="#">Read More</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card blog-card">
+<img src="img/shop8.jpg" class="card-img-top">
+<div class="card-body">
+<h5>How to Make Authentic Kimchi</h5>
+<p>Traditional Korean kimchi recipe made simple.</p>
+<a href="#">Read More</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card blog-card">
+<img src="img/kit1.webp" class="card-img-top">
+<div class="card-body">
+<h5>Perfect Homemade Sauerkraut</h5>
+<p>Create crunchy and probiotic-rich sauerkraut.</p>
+<a href="#">Read More</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- TROUBLESHOOTING SECTION -->
+<section class="py-5 bg-light">
+<div class="container">
+
+<div class="text-center mb-5">
+<h2 class="display-6">Fermentation Troubleshooting</h2>
+<p class="text-dark">
+Having issues during fermentation? Our guides help identify and fix
+common problems so your ferment turns out perfect every time.
+</p>
+</div>
+
+<div class="row g-4">
+
+<!-- Problem 1 -->
+<div class="col-lg-4 col-md-6">
+<div class="trouble-card h-100 p-4 text-center shadow-sm rounded">
+
+<div class="icon-box mb-3">
+<i class="fa-solid fa-triangle-exclamation"></i>
+</div>
+
+<h5>Why is my ferment moldy?</h5>
+
+<p class="text-dark">
+Mold can occur when vegetables are exposed to air.
+Learn proper brine ratios and weight techniques to
+keep ferments safely submerged.
+</p>
+
+<a href="#" class="btn btn-sm btn-outline-primary mt-2">
+Learn Fix
+</a>
+
+</div>
+</div>
+
+<!-- Problem 2 -->
+<div class="col-lg-4 col-md-6">
+<div class="trouble-card h-100 p-4 text-center shadow-sm rounded">
+
+<div class="icon-box mb-3">
+<i class="fa-solid fa-bottle-water"></i>
+</div>
+
+<h5>Ferment not bubbling?</h5>
+
+<p class="text-dark">
+If fermentation is slow, temperature or salt levels
+may need adjusting. Discover how to restart the
+fermentation process safely.
+</p>
+
+<a href="#" class="btn btn-sm btn-outline-primary mt-2">
+View Guide
+</a>
+
+</div>
+</div>
+
+<!-- Problem 3 -->
+<div class="col-lg-4 col-md-6">
+<div class="trouble-card h-100 p-4 text-center shadow-sm rounded">
+
+<div class="icon-box mb-3 " style="color: #d4a762;">
+<i class="fa-solid fa-flask"></i>
+</div>
+
+<h5>Too sour or salty?</h5>
+
+<p class="text-dark">
+Balance flavor by adjusting fermentation time,
+salt percentage, and vegetable ratios.
+</p>
+
+<a href="#" class="btn btn-sm btn-outline-primary mt-2">
+Read Tips
+</a>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- TESTIMONIAL SECTION -->
+<section class="py-5">
+<div class="container">
+
+<div class="text-center mb-5">
+<h2 class="display-6">What Our Customers Say</h2>
+<p class="text-dark">
+Thousands of home fermenters trust our kits and guides
+to create delicious probiotic foods.
+</p>
+</div>
+
+<div class="row g-4">
+
+<!-- Testimonial 1 -->
+<div class="col-lg-4 col-md-6">
+<div class="testimonial-card p-4 shadow-sm rounded text-center h-100">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg"
+class="rounded-circle mb-3"
+width="80" height="80">
+
+<p class="text-dark">
+“These fermentation kits made it incredibly easy to
+make kombucha and kimchi at home. The guides were
+perfect for beginners.”
+</p>
+
+<div class="rating text-warning mb-2">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+
+<h6 class="fw-bold mb-0">Sarah Johnson</h6>
+<small class="text-dark">Home Fermenter</small>
+
+</div>
+</div>
+
+<!-- Testimonial 2 -->
+<div class="col-lg-4 col-md-6">
+<div class="testimonial-card p-4 shadow-sm rounded text-center h-100">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg"
+class="rounded-circle mb-3"
+width="80" height="80">
+
+<p class="text-dark">
+“The kimchi kit was amazing. The troubleshooting
+guide helped me avoid mistakes and get authentic
+flavor.”
+</p>
+
+<div class="rating text-warning mb-2">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+
+<h6 class="fw-bold mb-0">Daniel Lee</h6>
+<small class="text-dark">Food Blogger</small>
+
+</div>
+</div>
+
+<!-- Testimonial 3 -->
+<div class="col-lg-4 col-md-6">
+<div class="testimonial-card p-4 shadow-sm rounded text-center h-100">
+
+<img src="https://randomuser.me/api/portraits/women/68.jpg"
+class="rounded-circle mb-3"
+width="80" height="80">
+
+<p class="text-dark">
+“I love the recipe blog. It helped me make my first
+successful sauerkraut and kombucha.”
+</p>
+
+<div class="rating text-warning mb-2">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+
+<h6 class="fw-bold mb-0">Emma Brown</h6>
+<small class="text-dark">Nutrition Enthusiast</small>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                           <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1>
+                    </a>
+                            <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
+                            <div class="footer-icon d-flex">
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Special Facilities</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="text-dark mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Cheese Burger</a>
+                                <a class="text-dark mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sandwich</a>
+                                <a class="text-dark mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Panner Burger</a>
+                                <a class="text-dark mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Special Sweets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Contact Us</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
+                                <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
+                                <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Social Gallery</h4>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                     <img src="img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>2026 CaterServ, All right reserved.</span>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+     <script src="js/theme-rtl.js"></script>
+    </body>
+
+</html>

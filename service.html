@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>CaterServ </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/fav.jpg">
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg py-4">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                             <a href="index.html" class="nav-item nav-link ">Home</a>
+                             <a href="index2.html" class="nav-item nav-link ">Home 2</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link active">Services</a>
+                             <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
+                                <div class="dropdown-menu bg-light">
+                                    <a href="event.html" class="dropdown-item">Products</a>
+                                    <a href="book.html" class="dropdown-item">Product Details</a>
+                                    
+                                </div>
+                            </div>
+                            <a href="blog.html" class="nav-item nav-link">Blog</a>
+                           
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                              <button id="themeToggle" class="btn btn-sm ms-2">🌙</button>
+
+      <button
+        id="rtlToggle"
+        class="btn btn-primary ms-2  text-dark"
+        title="RTL"
+      >
+        ⇆
+      </button>
+       <a href="login.html" class="btn btn-primary py-3 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                        </div>
+                       
+                       
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4">Services</h1>
+                <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+
+                    <li class="breadcrumb-item text-dark" aria-current="page">Services</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+      <!-- SERVICES INTRO -->
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="display-6">Our Fermentation Services</h2>
+    <p class="text-dark">
+      We provide everything you need to successfully ferment food at home —
+      from beginner-friendly kits to expert education and troubleshooting support.
+    </p>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- Service 1 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="service-card p-4 shadow-sm h-100 text-center">
+        <i class="fa-solid fa-box-open fa-2x text-primary mb-3"></i>
+        <h5>Fermentation Starter Kits</h5>
+        <p>
+          Our all-in-one kits include jars, cultures, guides, and ingredients
+          needed to start fermenting kombucha, kimchi, sauerkraut, and more.
+        </p>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="service-card p-4 shadow-sm h-100 text-center">
+        <i class="fa-solid fa-book-open fa-2x text-primary mb-3"></i>
+        <h5>Educational Guides</h5>
+        <p>
+          Step-by-step tutorials, fermentation science guides, and
+          recipe blogs help beginners learn safely and confidently.
+        </p>
+      </div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="service-card p-4 shadow-sm h-100 text-center">
+        <i class="fa-solid fa-headset fa-2x text-primary mb-3"></i>
+        <h5>Troubleshooting Support</h5>
+        <p>
+          Fermentation sometimes fails. Our expert troubleshooting
+          resources help identify problems and restore your batch.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- SERVICES INTRO -->
+<section class="container py-5">
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d"
+class="img-fluid rounded shadow">
+</div>
+
+<div class="col-lg-6">
+<h2 class="display-6">Premium Ingredients & Cultures</h2>
+
+<p class="text-dark ">
+We provide complete fermentation starter kits designed for beginners,
+home cooks, and fermentation enthusiasts. Our kits include carefully
+selected cultures, ingredients, step-by-step guides, and educational
+resources to help you create healthy fermented foods at home.Our fermentation kits are designed to make the process of creating healthy fermented foods simple and accessible for everyone. Each kit contains carefully selected ingredients, fermentation tools, and detailed instructions that guide you through every step. Whether you're making kombucha, kimchi, or sauerkraut, our kits help you produce safe, flavorful, and probiotic-rich foods right from your kitchen.
+</p>
+
+<p class="text-dark">
+From kombucha brewing to kimchi fermentation, we simplify the
+process so you can enjoy probiotic-rich foods with confidence.
+</p>
+
+</div>
+</div>
+</section>
+
+
+<!-- MAIN SERVICES -->
+<section class="container py-5">
+<div class="text-center mb-5">
+<h2 class="display-6">What We Offer</h2>
+<p class="text-dark">Explore our fermentation kits, education resources, and support services.</p>
+</div>
+
+<div class="row g-4">
+
+<!-- Service 1 -->
+<div class="col-lg-4 col-md-6">
+<div class="service-card shadow-sm rounded overflow-hidden h-100">
+
+<img src="img/pro1.jpg"
+class="img-fluid w-100 service-img">
+
+<div class="p-4">
+<h5>Kombucha Brewing Kits</h5>
+
+<p class="text-dark">
+Complete kombucha starter kits with SCOBY cultures,
+organic tea blends, fermentation jars, and brewing
+guides for making probiotic kombucha at home.
+</p>
+
+</div>
+</div>
+</div>
+
+
+<!-- Service 2 -->
+<div class="col-lg-4 col-md-6">
+<div class="service-card shadow-sm rounded overflow-hidden h-100">
+
+<img src="img/pro4.jpg"
+class="img-fluid w-100 service-img">
+
+<div class="p-4">
+<h5>Kimchi Fermentation Kits</h5>
+
+<p class="text-dark">
+Traditional Korean kimchi kits featuring authentic
+spices, fermentation jars, and step-by-step recipes
+for creating flavorful fermented vegetables.
+</p>
+
+</div>
+</div>
+</div>
+
+
+<!-- Service 3 -->
+<div class="col-lg-4 col-md-6">
+<div class="service-card shadow-sm rounded overflow-hidden h-100">
+
+<img src="img/pro5.jpg"
+class="img-fluid w-100 service-img">
+
+<div class="p-4">
+<h5>Sauerkraut & Pickle Kits</h5>
+
+<p class="text-dark">
+Beginner-friendly fermentation kits designed to help
+you make healthy probiotic sauerkraut and fermented
+pickles with simple ingredients.
+</p>
+
+</div>
+</div>
+</div>
+
+
+</div>
+</section>
+
+<!-- PROCESS -->
+<div class="container py-5">
+
+<div class="text-center mb-5">
+<h2 class="display-6">How Our Kits Work</h2>
+</div>
+
+<div class="row g-4 text-center">
+
+<div class="col-lg-3 col-md-6">
+<i class="fa-solid fa-cart-shopping fa-2x text-primary mb-3"></i>
+<h6>Choose Your Kit</h6>
+<p>Select a fermentation kit based on your recipe.</p>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<i class="fa-solid fa-book fa-2x text-primary mb-3"></i>
+<h6>Follow the Guide</h6>
+<p>Use our step-by-step fermentation instructions.</p>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<i class="fa-solid fa-clock fa-2x text-primary mb-3"></i>
+<h6>Let It Ferment</h6>
+<p>Allow natural fermentation to develop flavors.</p>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<i class="fa-solid fa-face-smile fa-2x text-primary mb-3"></i>
+<h6>Enjoy Healthy Food</h6>
+<p>Taste probiotic-rich fermented food at home.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- EDUCATION SECTION -->
+<section class="bg-light py-5">
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+<h2 class="display-6">Learn the Art of Fermentation</h2>
+
+<p class="text-dark">
+Fermentation can feel complicated for beginners.
+That's why our kits include educational resources,
+guides, and tutorials to ensure successful results.
+</p>
+
+<ul class="list-unstyled">
+
+<li class="mb-2">✔ Step-by-step fermentation guides</li>
+<li class="mb-2">✔ Video tutorials and recipe blogs</li>
+<li class="mb-2">✔ Ingredient preparation tips</li>
+<li class="mb-2">✔ Safety and hygiene instructions</li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-6">
+<img src="img/learn.webp"
+class="img-fluid rounded shadow">
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+.service-img{
+height:220px;
+object-fit:cover;
+}
+
+.service-card{
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+</style>
+
+
+
+
+
+<!-- SUPPLIES SECTION -->
+<div class="container-fluid py-5 bg-light">
+<div class="container">
+
+<div class="text-center mb-5">
+<h2 class="display-6">Fermentation Supplies</h2>
+<p class="text-dark">
+Premium tools and cultures designed for reliable fermentation results.
+</p>
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-6">
+<div class="supply-card text-center p-4 shadow-sm">
+<i class="fa-solid fa-flask fa-2x text-primary mb-3"></i>
+<h6>Starter Cultures</h6>
+<p>High-quality fermentation cultures.</p>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<div class="supply-card text-center p-4 shadow-sm">
+<i class="fa-solid fa-weight-hanging fa-2x text-primary mb-3"></i>
+<h6>Fermentation Weights</h6>
+<p>Keep vegetables submerged safely.</p>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<div class="supply-card text-center p-4 shadow-sm">
+<i class="fa-solid fa-jar fa-2x text-primary mb-3"></i>
+<h6>Glass Fermentation Jars</h6>
+<p>Durable jars designed for fermenting.</p>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<div class="supply-card text-center p-4 shadow-sm">
+<i class="fa-solid fa-temperature-half fa-2x text-primary mb-3"></i>
+<h6>Temperature Tools</h6>
+<p>Monitor fermentation conditions and streaming</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<!-- CTA -->
+<section class="bg-primary text-white text-center py-5">
+
+<div class="container">
+
+<h2 class="display-6">Start Your Fermentation Journey Today</h2>
+
+<p class="mb-4">
+Explore our kits and begin creating healthy fermented foods at home.
+</p>
+
+<a href="shop.html" class="btn btn-light px-5 py-3 rounded-pill">
+Explore Kits
+</a>
+
+</div>
+
+</section>
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+ <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1>
+                    </a>
+                            <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
+                            <div class="footer-icon d-flex">
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Special Facilities</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="text-dark mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Cheese Burger</a>
+                                <a class="text-dark mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sandwich</a>
+                                <a class="text-dark mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Panner Burger</a>
+                                <a class="text-dark mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Special Sweets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Contact Us</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
+                                <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
+                                <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="mb-4">Social Gallery</h4>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                     <img src="img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                                <div class="col-4">
+                                     <img src="img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>2026 CaterServ</a>, All right reserved.</span>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/theme-rtl.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
